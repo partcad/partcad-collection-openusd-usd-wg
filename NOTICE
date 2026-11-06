@@ -1,0 +1,19 @@
+partcad-collection-openusd-usd-wg
+=================================
+
+This PartCAD package serves the USD Working Group's assets as PartCAD parts.
+
+The code in this repository (the `usd_wg_repo.py` repository plugin, the shared
+`usd_assets.py`, the PartCAD configuration and the tests) is:
+
+    Copyright 2026 PartCAD
+    Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+No asset is included in this repository. The assets, their layers and their
+textures are fetched on demand from https://github.com/usd-wg/assets, and
+remain their contributors', each under the licence its readme gives - CC0,
+CC BY 4.0, CC BY-SA 4.0, CC BY-NC-SA 4.0 for McUsd - and otherwise under that
+repository's Apache License 2.0.
+
+OpenUSD and the Academy Software Foundation's marks are their owners'. This
+package is not affiliated with or endorsed by the USD Working Group.
