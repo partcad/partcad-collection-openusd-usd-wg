@@ -31,6 +31,10 @@ and kept by PartCAD from then on.
 the package says `manufacturable: false`, and so does the plugin of what it serves.
 
 Requires PartCAD 0.9.11 or newer: the first release whose `//builtin` has the `usd` part type.
+Until it is on PyPI, which has 0.9.2, that is PartCAD's `devel` branch:
+`python -m pip install --upgrade git+https://github.com/partcad/partcad.git@devel`, as
+[Installing a development version](https://partcad.readthedocs.io/en/latest/contributing.html#installing-a-development-version)
+says. An older PartCAD refuses this package, saying which version it needs.
 
 ## Which assets
 
