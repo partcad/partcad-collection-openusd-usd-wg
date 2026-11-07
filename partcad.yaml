@@ -19,7 +19,7 @@ url: https://github.com/usd-wg/assets
 
 # The first release whose //builtin has the 'usd' part type every part here
 # is.
-partcad: ">=0.9.6"
+partcad: ">=0.9.11"
 
 # Props, scenes and renderer tests made to be looked at: nothing in them says
 # they are made to be manufactured. The plugin says the same of 'assets'.
