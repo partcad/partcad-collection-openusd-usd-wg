@@ -19,7 +19,7 @@ url: https://github.com/usd-wg/assets
 
 # The first release whose //builtin has the 'usd' part type every part here
 # is.
-partcad: ">=0.9.6"
+partcad: ">=0.9.11"
 
 # Props, scenes and renderer tests made to be looked at: nothing in them says
 # they are made to be manufactured. The plugin says the same of 'assets'.
@@ -65,14 +65,22 @@ repositories:
           The branch, tag or commit of github.com/usd-wg/assets to serve. A
           branch is resolved to its commit once a week, and the files are
           fetched at that commit; a commit pins them for good.
+      looks:
+        type: bool
+        default: true
+        desc: >-
+          Whether a part's USDZ carries what its look is read from: the
+          shaders its layers name, and the images of its colour, roughness
+          and metalness, each of up to 8 MB. PartCAD's 'usd' part type
+          colours each face from them. 'false' carries the layers alone.
       textures:
         type: bool
         default: false
         desc: >-
-          Whether a part's USDZ carries the asset's textures too. PartCAD
-          builds a part from its geometry, so they are left out unless you
-          want the package complete - to open it in another USD application,
-          say.
+          Whether a part's USDZ carries every texture its layers name, each
+          as it is - normal maps and all - for a package complete enough to
+          open in another USD application. PartCAD needs only what 'looks'
+          carries.
       max_size_mb:
         type: float
         default: 512
